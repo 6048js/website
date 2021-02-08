@@ -1,0 +1,141 @@
+html {
+    overflow: hidden;
+    background-color: black;
+    color:white;
+    text-align: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#starfieldBackground {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+#mat {
+    width: 80%;
+    display:block;
+    margin: 0 auto;
+    border-radius: 25px;
+
+    --shadow-settings: 0 0 15px 0;
+    box-shadow: var(--shadow-settings) var(--theme-color);
+}
+
+#name {
+    display:block;
+    margin: 0 auto;
+    border-radius: 25px;
+    padding: 15px;
+    font-size: 50px;
+    font-family: 'Krona One', sans-serif;
+    
+    --shadow-settings: 0 0 5px;
+    text-shadow: var(--shadow-settings) var(--theme-color);
+}
+
+.website {
+    position: absolute;
+
+    display: none;
+
+    pointer-events: none;
+
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-5%);
+
+    width: 300px;
+
+    background-color: rgba(0,0,0,0.5);
+
+    --shadow-settings: 0 0 3px 0;
+    box-shadow: var(--shadow-settings) var(--theme-color),
+                var(--shadow-settings) var(--theme-color) inset;    border-radius: 15px;
+    padding:25px;
+}
+
+.centred {
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#center {
+    transition: opacity 0.5s ease-in-out;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    width: 300px;
+
+    background-color: rgba(0,0,0,0.5);
+
+    --shadow-settings: 0 0 3px 0;
+    box-shadow: var(--shadow-settings) var(--theme-color),
+                var(--shadow-settings) var(--theme-color) inset;
+    border-radius: 15px;
+    padding:25px;
+}
+
+hr {
+    display:block;
+    border: 1px solid rgba(0,0,0,0);
+
+    background-color: var(--theme-color);
+    
+    --shadow-settings: 0 0 4px 0;
+    box-shadow: var(--shadow-settings) var(--theme-color),
+                var(--shadow-settings) var(--theme-color) inset;
+}
+
+#bottom_links {
+    width: 100%;
+}
+
+#links {
+    margin: 0 auto;
+    width: 100%;
+}
+
+th, tr {
+    text-align: center;
+}
+
+td {
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+#bannedServers, #bannedServers > tbody > tr > * {
+    border-collapse: collapse;
+    box-shadow: var(--shadow-settings) var(--theme-color),
+                var(--shadow-settings) var(--theme-color) inset;
+}
+
+a {
+    color :white;
+    text-decoration: none;
+
+    transition: text-shadow 5s;
+
+    --shadow-settings: 0 0 4px;
+    text-shadow: var(--shadow-settings) var(--theme-color);
+    cursor: pointer;
+}
+
+a:hover {
+    --shadow-settings: 0 0 2px;
+    text-decoration: underline;
+}
