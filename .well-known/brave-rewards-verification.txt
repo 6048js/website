@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: 6vz.xyz
+Token: 934360413f8dd138dba20fa8edef1c87d0dd0763df77f4a4fe2b68ebb2078feb
